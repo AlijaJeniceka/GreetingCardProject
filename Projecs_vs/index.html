@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greeting</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div id="logoDiv">
+      <img id="logo" src="static/logo.jpg" alt="My Website Logo">
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="greetingForm.html">Create a greeting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="instruction.html">How it works</a>
+          </li>
+        </ul>
+        <form class="d-flex" role = "search">
+          <input class="form-control me-1 " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Go</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/logo.jpg" class="carousel-img" alt="welcome">
+          <div class="carousel-caption">
+            <h5>Welcome to Greeting service!</h5>
+            <p>We are here for you!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/640aed24-6596-4ec4-ac4e-3f0e4020f04d.png" class="carousel-img" alt="logo">
+          <div class="carousel-caption">
+            <h5>We are happy to see you!</h5>
+            <p>Choose the card and send it using our service!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/9pcs-Set-Creative-bookmarks-Vintage-Card-Postcard-DIY-Greeting-Card-Note-Cards-Bookmark-Gifts-Office-and.jpg_640x640.jpg" class="carousel-img" alt="Send a card">
+          <div class="carousel-caption">
+            <h5>Send your greeting!</h5>
+            <p>We will help you send a greeting in time you want!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="themes" class="py-5">
+
+      <div class="container">
+          <div id="overlay" class="overlay">
+           <div id="overlayContent" class="overlay-content">       
+            <h3 class="mb-4">Choose the theme and find your special card to send:</h3>
+            <div class="row">
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/christmas.jpg" alt="Christmas" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title ">Christmas</h5>
+                    <p class="card-text">Winter season is comming, time to find a presents for all is not enough? 
+                      Choose the Christmas card to send to celebrate the Christmas season with relatives and friends. 
+                    </p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/Valentines_day.jpg" alt="Valentines" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Valentine's Day</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/happyEaster.jpg" alt="Happy Easter" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Happy Easter</h5>
+                    <p class="card-text">Send a card to celebrate an Easter.</p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/happyBirthday.jpg" alt="Happy Birthday" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Happy Birthday</h5>
+                    <p class="card-text">Friend's Birthday is comming, but you are not able to present the gift by yourself?
+                      Send the gift card and write your own greeting.
+                    </p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/nameday.jpg" alt="Nameday" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Nameday</h5>
+                    <p class="card-text">Name is very important for every of us. 
+                      Send the greeting to your friends, relatives and collegues to celebrate nameday! 
+                    If you don't know when is the nameday of your relatives or friends click on the button "Find a name"</p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                    <a href="names.html" class="btn btn-secondary">Find a name</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/mother's_day.jpg" alt="Mother's day" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Mother's day</h5>
+                    <p class="card-text">You are abroad, but want to send a card to your mum in Mother's day, 
+                      choose the card, you liked and input your greeting text and we will send it to your Mum.</p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/wedding.jpg" alt="Wedding day" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Wedding day</h5>
+                    <p class="card-text">Unable to attend the wedding, but still want to greet newlyweds?
+                      Choose your favorite card and create a special greeting to surprise newlyweds! 
+                    </p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/27073_big-anniversary-greeting-card.jpeg" alt="Happy Anniversary" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Happy Anniversary</h5>
+                    <p class="card-text">Anniversary is important for every couple. 
+                      Send your greeting to wish a Happy Anniversary to couple you know.</p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card" style="width: 16rem;">
+                  <img src="static/graduation.jpg" alt="Graduation" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Graduation</h5>
+                    <p class="card-text">Graduation is a big step for future, 
+                      wish the good luck to graduates and celebrate together.  
+                    </p>
+                    <a href="#" class="btn btn-primary">Open card</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+        </section>
+
+    <footer class="text-dark py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Contact Us</h4>
+            <p>Some street, Riga, Latvia<br>
+              Phone: <a class="phone-number" href="tel:1235551234">123-555-1234</a><br>
+              Email: <a href="mailto:info@greeting.com">info@greeting.com</a></p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>2023 Greeting Service. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
